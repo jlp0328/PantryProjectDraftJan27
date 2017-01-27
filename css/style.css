@@ -1,0 +1,294 @@
+
+
+
+*{
+	box-sizing: border-box;
+}
+div{
+	/* outline-style: dotted;
+	outline-color: orange;
+	margin: 2px;  */
+}
+
+/*
+div{
+    outline-style: dotted;
+    outline-color: orange;
+    margin: 2px;
+}*/
+
+/*Navigation and Modal*/
+.brand-logo{
+  font-family: 'Rock Salt', cursive;
+}
+
+#usernameInput.input-field{
+  width: 350px;
+}
+
+#usernameInput{
+  width: 500px;
+}
+
+#loginButton{
+  color: white;
+}
+
+#modal h4 {
+
+}
+
+/*Main Container w/ Background Image*/
+
+#mainImage{
+  background-image: url("../images/food-salad-healthy-vegetables.jpg");
+  max-width: 100%;
+  height: 1050px;
+  background-size: cover;
+}
+
+/*Ingredient Input*/
+
+h3 {
+  color: white;
+  font-family: 'Rock Salt', cursive;
+  margin-top: 0px;
+}
+
+h4 {
+  color: white;
+  font-family: 'Rock Salt', cursive;
+  margin-top: 0px;
+  line-height: 1.6;
+  display: inline-block;
+}
+
+#ingredientInput p {
+	color:white;
+
+}
+
+#find-recipe{
+  font-size: 10px;
+  word-wrap: break-word;
+}
+
+#ingredientInput{
+  position: static;
+  right: 60px;
+  bottom: 10px;
+  padding-top: 0px;
+}
+
+#numOfRecipes{
+  width: 50%;
+  background-color: none;
+}
+input[type=text]:focus{
+	background-color: #439543;
+}
+
+/*Tabs for Recipes, Videos, and Saved Recipes*/
+#recipeBank{
+  padding-top: 15px;
+}
+
+#videoBank{
+  margin-top: 10px;
+  text-align: center;
+}
+
+#iFrameDiv{
+  border-color: red;
+  border: 15px;
+}
+
+#recipeVideo{
+margin-top: 15px;
+margin-bottom: 15px;
+
+}
+
+.tabs .tab a{
+    color: #880e4f !important;
+}
+
+.tabs .indicator {
+    background-color: #880e4f !important;
+}
+
+.tabs .tab a.active {
+  border-bottom: 2px solid #880e4f;
+}
+/*#loginBox{
+margin-left: 100px;
+margin-top: 100px;
+border-radius: 3px;
+
+}*/
+
+
+
+
+
+
+
+
+
+/* ---------Style for card panels with animation------------------ */
+
+
+.card .card-content{
+  width: 100%;
+	height: 680px;
+	display: inline-block;
+  xmargin: -20px;
+}
+.card-content{
+	background-color: #439543;
+}
+.ch-item {
+	width: 100%;
+	height: 470px;
+	xborder-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+}
+.ch-info-wrap{
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	xborder-radius: 50%;
+	perspective: 800px;
+	transition: all 0.4s ease-in-out;
+	xtop: 20px;
+	xleft: 20px;
+	background: #f9f9f9 url(https://dummyimage.com/600x400/fff/fff);
+	box-shadow:
+		0 0 0 20px rgba(255,255,255,0.2),
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+
+}
+.ch-info{
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	xborder-radius: 50%;
+	transition: all 0.4s ease-in-out;
+	transform-style: preserve-3d;
+}
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	xborder-radius: 50%;
+	background-position: center center;
+	backface-visibility: hidden;
+}
+.ch-info .ch-info-back {
+	transform: rotate3d(0,1,0,180deg);
+	background: #000;
+}
+/* .ch-img-1 {
+	xbackground-image: url(https://spoonacular.com/recipeImages/Crispy-Lemon-Fried-Chicken-443487.jpg);
+    background-size: cover;
+} */
+
+
+.ch-info h3 ,
+.ch-info h5{
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin: 0 15px;
+	padding: 30px 0 0 0;
+	height: 60px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+.ch-info ul{
+  color: #fff !important;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+margin: 0 15px 0px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+}
+
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+  text-align: right;
+  padding-right: 21px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+p.readymin {
+	color: #fff !important;
+    font-size: 15px;
+	padding-top: 20px;
+	font-style: italic;
+	padding: 20px 50px 0px;
+}
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+.ch-item:hover .ch-info-wrap {
+	box-shadow:
+		0 0 0 0 rgba(255,255,255,0.8),
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+
+.ch-item:hover .ch-info {
+	transform: rotate3d(0,1,0,-180deg);
+}
+div.card-action{
+  background-color: #fff !important;
+  line-height: normal !important;
+}
+.card-title{
+  font-size: 20px !important;
+  line-height: normal !important;
+}
+div.save-recipe{
+  font-weight: bold;
+  text-align: center;
+  width:100%;
+}
+h6.credit-text{
+  color: #7f9fa1;
+  font-style: italic;
+}
+span.missed {
+    background-color: #954343;
+    xfont-weight: 900;
+}
+span.used {
+    background-color: #4f880e;
+}
+#savedCard-panel{
+	height: auto !important;
+	background-color: #91a17f !important;
+}
+#savedCard-panel h5 a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+/* -----------------------------------------------------------------------*/
+
