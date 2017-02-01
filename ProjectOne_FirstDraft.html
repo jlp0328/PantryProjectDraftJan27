@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Polished Papayas App</title>
+  <title>Polished Pantry</title>
 
   <!-- Viewport controls how webpage is displayed on mobile device-->
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -36,7 +36,7 @@
   <nav class="brown lighten-2">
     <div class="container nav-wrapper">
 
-      <a href="#!" class="brand-logo">Polished Papayas</a>
+      <a href="#!" class="brand-logo">Polished Pantry</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="waves-effect pink darken-4 btn modal-trigger" href="#modal1">Login</a></li>
@@ -73,45 +73,38 @@
 
 <div class="responsive-img" id="mainImage">
 
-<div class="container section">
-
-<!--     <div class="row">
-
-          <form class="col s12">
-              <div class="input-field col s4">
-              <i class="mdi-action-account-circle prefix"></i>
-              <input id="icon_prefix" type="text" class="validate">
-              <label for="icon_prefix" class="white-text">Username</label>
-              </div> --><!-- closing input field -->
-
-              <!-- <div class="row"> -->
-             <!--  <div class="input-field col s4">
-              <i class="mdi-action-lock-outline prefix"></i>
-              <input id="icon_password" type="password" class="validate">
-              <label for="icon_password" class="white-text">Password</label>
-              </div> --> <!-- closing input field -->
-
-          <!--     <div class="input-field col s2">
-              <button class="btn #03a9f4 light-blue" type="submit" name="action" id="loginButton" ><i class="mdi-action-lock-open"></i><a id="loginButton" href="ProjectOne_FirstDraft.html">Login</a></button> -->
-             <!--  </div> --> <!--input col s4 -->
+<div class="container">
 
 
-    <!--       </form> -->
-
-<!-- </div> --> <!-- end of row
-
-<!- User Input -->
+<!-- <!- User Input -->
     <div class="row section" id="ingredientInput">
-       <div class="col s4 m4 l6">
+       <div class="container col s4 m4 l6">
 
-              <h4>What's in Your Pantry<span id="displayMember"></span>!?</h4>
-              <p>See what comes back!</p>
+      <h4>What's in Your Pantry<span id="displayMember"></span>!?</h4>
 
-              <form>
+              <a class="waves-effect pink darken-4 btn-large" type="button" name="action" id="open-input-container" href="#modal2">Get started!</a>
+
+    </div><!--End of col6-->
+    </div><!--end of row-->
+
+  </div> <!-- end of container -->
+  </div> <!-- end of #mainImage -->
+
+
+   <!-- Modal Structure for inputting ingredients. -->
+  <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4 class="teal-text text-lighten-1">What's in Your Pantry<span id="displayMember"></span>!?</h4>
+        <!-- <p>See what comes back!</p> -->
+      </div>
+
+     <div class="modal-footer">
+
+      <form>
 
                 <input type="text"
                        placeholder= "Type in your ingredients here..."
-                       class="flexdatalist white-text"
+                       class="flexdatalist teal-text text-lighten-1"
                        data-min-length="1"
                        multiple="multiple"
                        list="ingredients"
@@ -133,33 +126,16 @@
 
 
               <div>
-                <input id="numOfRecipes" type="text" class="white-text" size="1" maxlength="2" placeholder="How Many Recipes?">
+                <input id="numOfRecipes" type="text" class="teal-text text-lighten-1" size="1" maxlength="2" placeholder="How Many Recipes?">
                 <span id="badNumber" class="red-text"></span>
               </div>
 
-              <a class="waves-effect pink darken-4 btn-large" type="button" name="action" id="find-recipe" href="#recipeBank">Let's get cooking!</a>
+      <a class="modal-action modal-close waves-effect pink darken-4 btn-large" type="button" name="" id="find-recipe" href="#recipeBank">Let's get cooking!</a>
+        </form>
 
-
-              <!-- <i class="material-icons right">send</i> -->
-              <!-- </div> --><!--End of col12-->
-              <!-- </div> --><!--End of row-->
-
-            </form>
-
-
-    </div><!--End of col6-->
-    </div><!--end of row-->
-
-  </div> <!-- end of container -->
-  </div> <!-- end of wrapper -->
-
-<!-- Box Where Selected Ingredients Will Populate -->
-<!--   <div class="col l6">
-  <div class="card-panel">
-  <h2>Ingredients Populate</h2>
-  <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
-  </div>
-  </div> -->
+    </div> <!-- closing modal footer -->
+  </div> <!-- closing modal
+ -->
 
 <div class="container section scrollspy" id="tab-section">
 <!-- Tabs to display recipes and videos -->
